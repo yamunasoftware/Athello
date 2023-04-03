@@ -14,7 +14,6 @@ public class Train {
   // Training Settings:
   private static int inputLength = 64, nodes = 1000000, epochs = 10;
   private static double outputLength = 64, mutMin = 0.9, mutMax = 1.1;
-  private static Training training = new Training(inputLength, nodes, epochs, outputLength, mutMin, mutMax);
 
   // Constructor:
   public Train() {}
@@ -24,8 +23,18 @@ public class Train {
   // Train Algorithm Method:
   public static Algorithm train(double inputs[][], double outputs[]) throws Exception {
     // Returns the Algorithm:
+    Training training = new Training(inputLength, nodes, epochs, outputLength, mutMin, mutMax);
     return training.train(inputs, outputs);
   }
+
+  // Train Existing Algorithm Method:
+  public static Algorithm train(Algorithm existing, double inputs[][], double outputs[]) throws Exception {
+    // Returns the Algorithm:
+    Training training = new Training(existing, nodes, epochs, mutMin, mutMax);
+    return training.train(inputs, outputs);
+  }
+
+  /* STORAGE METHODS */
 
   // Save Algorithm Method:
   public static void saveAlgorithm(Algorithm save, String fileName) throws Exception {
