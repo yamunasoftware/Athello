@@ -1,10 +1,10 @@
 # Athello
 
-AI Genetic Algorithm Othello Engine
+AI Othello Engine
 
 ## Introduction
 
-The **Athello** engine is an *Othello* (*Reversi*) game engine, which is built on the JAmuna genetic algorithm library. The engine also uses the **OpenCSV** library for some CSV reading/writing tasks. The engine is trained on hundreds and thousands of *Reversi* positions which are labeled for what is the best move in the position. The AI engine then starts to recognize the patterns found in the game until the AI reaches a strong playing level. The AI can only view the position from either white or black's perspective depending on the data that it is given. For our training set we use data from white's perspective; however, you can train the engine using data from black's perspective if you wish.
+The **Athello** engine is an *Othello* (*Reversi*) game engine, which is built on the JAmuna machine learning library. The engine also uses the **OpenCSV** library for some CSV reading/writing tasks. The engine is trained on hundreds and thousands of *Reversi* positions which are labeled for what is the best move in the position. The AI engine then starts to recognize the patterns found in the game until the AI reaches a strong playing level. The AI can only view the position from either white or black's perspective depending on the data that it is given. For our training set we use data from white's perspective; however, you can train the engine using data from black's perspective if you wish.
 
 ## Installation
 
